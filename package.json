@@ -1,0 +1,23 @@
+{
+  "name": "nft-management-system-doc-gitbook",
+  "version": "1.0.0",
+  "homepage": "https://thomas0913.github.io/nft-management-system-doc-gitbook",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "gitbook init",
+    "start": "gitbook serve",
+    "build": "gitbook build . ./build"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "gitbook-cli": "^2.3.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
