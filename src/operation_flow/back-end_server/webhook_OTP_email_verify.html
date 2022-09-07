@@ -1,0 +1,1238 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>WebHooks-OTP郵件認證 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="webhook_all_owner_list.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    首頁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../introduction.html">
+            
+                <a href="../../introduction.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../building/">
+            
+                <a href="../../building/">
+            
+                    
+                    基礎與建置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../building/preparing.html">
+            
+                <a href="../../building/preparing.html">
+            
+                    
+                    預備知識
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../building/front.html">
+            
+                <a href="../../building/front.html">
+            
+                    
+                    前端UI渲染建置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../building/back.html">
+            
+                <a href="../../building/back.html">
+            
+                    
+                    後端伺服器建置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../building/blockchain_interact.html">
+            
+                <a href="../../building/blockchain_interact.html">
+            
+                    
+                    區塊練資料交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../layout_designing/">
+            
+                <a href="../../layout_designing/">
+            
+                    
+                    佈局設計
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../layout_designing/architecture.html">
+            
+                <a href="../../layout_designing/architecture.html">
+            
+                    
+                    整體架構
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../layout_designing/routes_layout.html">
+            
+                <a href="../../layout_designing/routes_layout.html">
+            
+                    
+                    路由佈局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../layout_designing/permission.html">
+            
+                <a href="../../layout_designing/permission.html">
+            
+                    
+                    權限層級
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../layout_designing/pages_layout/">
+            
+                <a href="../../layout_designing/pages_layout/">
+            
+                    
+                    頁面版面配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="../../layout_designing/pages_layout/beginning_route.html">
+            
+                <a href="../../layout_designing/pages_layout/beginning_route.html">
+            
+                    
+                    初始頁面路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="../../layout_designing/pages_layout/login_route.html">
+            
+                <a href="../../layout_designing/pages_layout/login_route.html">
+            
+                    
+                    登入頁面路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="../../layout_designing/pages_layout/forgot_password_route.html">
+            
+                <a href="../../layout_designing/pages_layout/forgot_password_route.html">
+            
+                    
+                    找回密碼頁面路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" data-path="../../layout_designing/pages_layout/home_page_route.html">
+            
+                <a href="../../layout_designing/pages_layout/home_page_route.html">
+            
+                    
+                    主頁路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.5" data-path="../../layout_designing/pages_layout/guiding.html">
+            
+                <a href="../../layout_designing/pages_layout/guiding.html">
+            
+                    
+                    教學指導頁面路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.6" data-path="../../layout_designing/pages_layout/trading_data_pool_route.html">
+            
+                <a href="../../layout_designing/pages_layout/trading_data_pool_route.html">
+            
+                    
+                    交易數據頁面路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.7" data-path="../../layout_designing/pages_layout/about_route.html">
+            
+                <a href="../../layout_designing/pages_layout/about_route.html">
+            
+                    
+                    關於頁面路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.8" data-path="../../layout_designing/pages_layout/help_route.html">
+            
+                <a href="../../layout_designing/pages_layout/help_route.html">
+            
+                    
+                    求助頁面路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.9" data-path="../../layout_designing/pages_layout/contact_us_route.html">
+            
+                <a href="../../layout_designing/pages_layout/contact_us_route.html">
+            
+                    
+                    聯絡我們頁面路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.10" data-path="../../layout_designing/pages_layout/logout.html">
+            
+                <a href="../../layout_designing/pages_layout/logout.html">
+            
+                    
+                    登出頁面路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../layout_designing/UI_components_layout.html">
+            
+                <a href="../../layout_designing/UI_components_layout.html">
+            
+                    
+                    UI組件佈局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../../layout_designing/server_architecture_and_position.html">
+            
+                <a href="../../layout_designing/server_architecture_and_position.html">
+            
+                    
+                    後端伺服器架構與角色定位
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../function_analyzing_and_introduction/">
+            
+                <a href="../../function_analyzing_and_introduction/">
+            
+                    
+                    功能解析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../function_analyzing_and_introduction/basic_function/">
+            
+                <a href="../../function_analyzing_and_introduction/basic_function/">
+            
+                    
+                    基本功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../../function_analyzing_and_introduction/basic_function/login.html">
+            
+                <a href="../../function_analyzing_and_introduction/basic_function/login.html">
+            
+                    
+                    登入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../../function_analyzing_and_introduction/basic_function/guide.html">
+            
+                <a href="../../function_analyzing_and_introduction/basic_function/guide.html">
+            
+                    
+                    教學指導
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="../../function_analyzing_and_introduction/basic_function/helpler.html">
+            
+                <a href="../../function_analyzing_and_introduction/basic_function/helpler.html">
+            
+                    
+                    雜項輔助功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="../../function_analyzing_and_introduction/basic_function/logout.html">
+            
+                <a href="../../function_analyzing_and_introduction/basic_function/logout.html">
+            
+                    
+                    登出
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../function_analyzing_and_introduction/main_funciton/">
+            
+                <a href="../../function_analyzing_and_introduction/main_funciton/">
+            
+                    
+                    主要功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="../../function_analyzing_and_introduction/main_funciton/wallet_connect.html">
+            
+                <a href="../../function_analyzing_and_introduction/main_funciton/wallet_connect.html">
+            
+                    
+                    錢包連接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="../../function_analyzing_and_introduction/main_funciton/nft_mint.html">
+            
+                <a href="../../function_analyzing_and_introduction/main_funciton/nft_mint.html">
+            
+                    
+                    NFT鑄造
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" data-path="../../function_analyzing_and_introduction/main_funciton/nft_airdrop.html">
+            
+                <a href="../../function_analyzing_and_introduction/main_funciton/nft_airdrop.html">
+            
+                    
+                    NFT空投
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.4" data-path="../../function_analyzing_and_introduction/main_funciton/nft_owner_checker.html">
+            
+                <a href="../../function_analyzing_and_introduction/main_funciton/nft_owner_checker.html">
+            
+                    
+                    NFT持有人驗證
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.5" data-path="../../function_analyzing_and_introduction/main_funciton/nft_owner_list.html">
+            
+                <a href="../../function_analyzing_and_introduction/main_funciton/nft_owner_list.html">
+            
+                    
+                    NFT持有人名單
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../function_analyzing_and_introduction/optional_function/">
+            
+                <a href="../../function_analyzing_and_introduction/optional_function/">
+            
+                    
+                    附加功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../function_analyzing_and_introduction/optional_function/double_confirm.html">
+            
+                <a href="../../function_analyzing_and_introduction/optional_function/double_confirm.html">
+            
+                    
+                    二次確認
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../function_analyzing_and_introduction/optional_function/security_verify.html">
+            
+                <a href="../../function_analyzing_and_introduction/optional_function/security_verify.html">
+            
+                    
+                    安全認證
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.3" data-path="../../function_analyzing_and_introduction/optional_function/trading_data.html">
+            
+                <a href="../../function_analyzing_and_introduction/optional_function/trading_data.html">
+            
+                    
+                    交易數據
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../function_analyzing_and_introduction/server_side_api/">
+            
+                <a href="../../function_analyzing_and_introduction/server_side_api/">
+            
+                    
+                    WebHooks
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.4.1" data-path="../../function_analyzing_and_introduction/server_side_api/otp_email_verify.html">
+            
+                <a href="../../function_analyzing_and_introduction/server_side_api/otp_email_verify.html">
+            
+                    
+                    OTP郵件認證
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.2" data-path="../../function_analyzing_and_introduction/server_side_api/all_nft_owner_list.html">
+            
+                <a href="../../function_analyzing_and_introduction/server_side_api/all_nft_owner_list.html">
+            
+                    
+                    總NFT持有人名單
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    操作流程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../front-end_web_page/">
+            
+                <a href="../front-end_web_page/">
+            
+                    
+                    系統前台網頁操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../front-end_web_page/start.html">
+            
+                <a href="../front-end_web_page/start.html">
+            
+                    
+                    開始進入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../front-end_web_page/login.html">
+            
+                <a href="../front-end_web_page/login.html">
+            
+                    
+                    登入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="../front-end_web_page/wallet_connect.html">
+            
+                <a href="../front-end_web_page/wallet_connect.html">
+            
+                    
+                    錢包連接
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="../front-end_web_page/double_confirm.html">
+            
+                <a href="../front-end_web_page/double_confirm.html">
+            
+                    
+                    二次確認
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="../front-end_web_page/mint.html">
+            
+                <a href="../front-end_web_page/mint.html">
+            
+                    
+                    NFT批量鑄造
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="../front-end_web_page/airdrop.html">
+            
+                <a href="../front-end_web_page/airdrop.html">
+            
+                    
+                    NFT批量空投
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.7" data-path="../front-end_web_page/owner_checker.html">
+            
+                <a href="../front-end_web_page/owner_checker.html">
+            
+                    
+                    NFT持有人驗證
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.8" data-path="../front-end_web_page/owner_list.html">
+            
+                <a href="../front-end_web_page/owner_list.html">
+            
+                    
+                    NFT持有人名單
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.9" data-path="../front-end_web_page/logout.html">
+            
+                <a href="../front-end_web_page/logout.html">
+            
+                    
+                    登出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.10" data-path="../front-end_web_page/guide.html">
+            
+                <a href="../front-end_web_page/guide.html">
+            
+                    
+                    教學指導
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.11" data-path="../front-end_web_page/trading_data.html">
+            
+                <a href="../front-end_web_page/trading_data.html">
+            
+                    
+                    交易數據
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.12" data-path="../front-end_web_page/about.html">
+            
+                <a href="../front-end_web_page/about.html">
+            
+                    
+                    關於
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.13" data-path="../front-end_web_page/help.html">
+            
+                <a href="../front-end_web_page/help.html">
+            
+                    
+                    求助
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.14" data-path="../front-end_web_page/contact_us.html">
+            
+                <a href="../front-end_web_page/contact_us.html">
+            
+                    
+                    聯絡我們
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.15" data-path="../front-end_web_page/safety_auth.html">
+            
+                <a href="../front-end_web_page/safety_auth.html">
+            
+                    
+                    安全認證
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    系統後台伺服器操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.6.2.1" data-path="webhook_OTP_email_verify.html">
+            
+                <a href="webhook_OTP_email_verify.html">
+            
+                    
+                    WebHooks-OTP郵件認證
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="webhook_all_owner_list.html">
+            
+                <a href="webhook_all_owner_list.html">
+            
+                    
+                    WebHooks-總NFT持有人名單
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../general_program_standard_table/">
+            
+                <a href="../../general_program_standard_table/">
+            
+                    
+                    總程式規格表
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../general_program_standard_table/front_end.html">
+            
+                <a href="../../general_program_standard_table/front_end.html">
+            
+                    
+                    前端規格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../general_program_standard_table/back_end.html">
+            
+                <a href="../../general_program_standard_table/back_end.html">
+            
+                    
+                    後端規格
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../conclusion/">
+            
+                <a href="../../conclusion/">
+            
+                    
+                    結論
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../conclusion/extension_problem.html">
+            
+                <a href="../../conclusion/extension_problem.html">
+            
+                    
+                    延伸問題
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../conclusion/future.html">
+            
+                <a href="../../conclusion/future.html">
+            
+                    
+                    未來規劃
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../references.html">
+            
+                <a href="../../references.html">
+            
+                    
+                    參考資料與附件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >WebHooks-OTP郵件認證</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="webhooks-otp&#x90F5;&#x4EF6;&#x8A8D;&#x8B49;">WebHooks-OTP&#x90F5;&#x4EF6;&#x8A8D;&#x8B49;</h1>
+<p>&#x5C1A;&#x672A;&#x958B;&#x767C;&#x5B8C;&#x6210;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 系統後台伺服器操作">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="webhook_all_owner_list.html" class="navigation navigation-next " aria-label="Next page: WebHooks-總NFT持有人名單">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"WebHooks-OTP郵件認證","level":"1.6.2.1","depth":3,"next":{"title":"WebHooks-總NFT持有人名單","level":"1.6.2.2","depth":3,"path":"src/operation_flow/back-end_server/webhook_all_owner_list.md","ref":"./src/operation_flow/back-end_server/webhook_all_owner_list.md","articles":[]},"previous":{"title":"系統後台伺服器操作","level":"1.6.2","depth":2,"path":"src/operation_flow/back-end_server/README.md","ref":"./src/operation_flow/back-end_server/README.md","articles":[{"title":"WebHooks-OTP郵件認證","level":"1.6.2.1","depth":3,"path":"src/operation_flow/back-end_server/webhook_OTP_email_verify.md","ref":"./src/operation_flow/back-end_server/webhook_OTP_email_verify.md","articles":[]},{"title":"WebHooks-總NFT持有人名單","level":"1.6.2.2","depth":3,"path":"src/operation_flow/back-end_server/webhook_all_owner_list.md","ref":"./src/operation_flow/back-end_server/webhook_all_owner_list.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-search","search-pro","back-to-top-button","chapter-fold","copy-code-button","advanced-emoji","splitter"],"pluginsConfig":{"chapter-fold":{},"splitter":{},"search-pro":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"copy-code-button":{},"advanced-emoji":{"embedEmojis":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/operation_flow/back-end_server/webhook_OTP_email_verify.md","mtime":"2022-09-07T14:06:03.130Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-09-07T14:22:51.564Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
